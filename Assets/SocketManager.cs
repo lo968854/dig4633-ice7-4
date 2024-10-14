@@ -7,7 +7,11 @@ public class SocketManager : MonoBehaviour
     [System.Serializable]
     public class SocketOccupiedEvent : UnityEvent<GameObject> { }
 
+    public class SocketUnOccupiedEvent : UnityEvent<GameObject> { }
+
     public SocketOccupiedEvent onSocketOccupied;
+
+    public SocketUnOccupiedEvent onSocketUnoccupied;
 
     // This will store the current object occupying the socket
     private GameObject currentOccupant;
@@ -34,6 +38,7 @@ public class SocketManager : MonoBehaviour
         {
             Debug.Log($"{currentOccupant.name} has released the socket.");
             currentOccupant = null;
+            
         }
         else
         {
