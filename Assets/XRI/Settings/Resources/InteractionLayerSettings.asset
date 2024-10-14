@@ -27,6 +27,9 @@ MonoBehaviour:
   - 
   - 
   - 
+  - Book_Red
+  - Book_Blue
+  - Book_Black
   - 
   - 
   - 
@@ -40,8 +43,5 @@ MonoBehaviour:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Candles
   - Teleport
